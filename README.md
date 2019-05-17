@@ -29,3 +29,4 @@ class Example extends Component {
 ## License
 
 MIT © [Gaserd](https://github.com/Gaserd)
+# vk-apps-button
