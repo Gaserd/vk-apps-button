@@ -3,19 +3,37 @@ import PropTypes from 'prop-types'
 
 import styles from './styles.css'
 
-export default class ExampleComponent extends Component {
+export default class VKMiniAppsButton extends Component {
   static propTypes = {
-    text: PropTypes.string
+    url: PropTypes.string.isRequired,
+    title : PropTypes.string.isRequired,
+    description : PropTypes.string.isRequired,
+    icon : PropTypes.string.isRequired
   }
 
   render() {
+
     const {
-      text
+      url,
+      icon,
+      title,
+      description,
+      style
     } = this.props
 
     return (
-      <div className={styles.test}>
-        Example Component: {text}
+      <div style={style}>
+        <a 
+          href={url}
+          target='_blank'
+          className={styles.vk_mini_apps_button}
+        >
+          <img className={styles.vk_mini_apps_icon} src={icon}/>
+          <span className={styles.vk_mini_apps_text}>
+            <span className={styles.vk_mini_apps_title}>{title}</span> <br/>
+            <span className={styles.vk_mini_apps_description}>{description}</span>
+          </span>
+        </a>
       </div>
     )
   }

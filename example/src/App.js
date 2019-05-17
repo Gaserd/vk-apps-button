@@ -1,12 +1,18 @@
 import React, { Component } from 'react'
 
-import ExampleComponent from 'vk-apps-button'
+import VKMiniAppsButton from 'vk-apps-button'
 
 export default class App extends Component {
   render () {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <VKMiniAppsButton 
+          url={'https://vk.com/aviatickets'}
+          title={'Поиск авиабилетов'}
+          description={'Экономь на авиабилетах!'}
+          style={{ margin : 20 }}
+          icon={'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/VK.com-logo.svg/768px-VK.com-logo.svg.png'}
+        />
       </div>
     )
   }

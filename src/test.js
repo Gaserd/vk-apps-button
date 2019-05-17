@@ -1,7 +1,7 @@
-import ExampleComponent from './'
+import VKMiniAppsButton from './'
 
-describe('ExampleComponent', () => {
+describe('VKMiniAppsButton', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(VKMiniAppsButton).toBeTruthy()
   })
 })

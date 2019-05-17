@@ -1,8 +1,33 @@
-/* add css styles here (optional) */
-
-.test {
+.vk_mini_apps_button {
   display: inline-block;
-  margin: 2em auto;
-  border: 2px solid #000;
-  font-size: 2em;
+  padding: 10px;
+  margin: 1px;
+  background-color: #c4c4c4;
+  border-radius: 15px;
+  text-decoration: none;
+  width: 295px;
+}
+
+.vk_mini_apps_icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 40px;
+  height: 40px;
+}
+
+.vk_mini_apps_text {
+  display: inline-block;
+  margin-left: 10px;
+  width: 240px;
+}
+
+.vk_mini_apps_title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+.vk_mini_apps_description {
+  font-size: 15px;
+  color: #000;
 }
